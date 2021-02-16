@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         padding: 10,
         marginBottom: 18,
         height: 50,
-        backgroundColor: 'white'
+        backgroundColor: props.bg
         
         
       },
@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
             <TextInput
             autoCapitalize= 'none'
             editable= {props.editable}
+            backgroundColor= {props.bg}
             onChangeText = {props.onChangeText}
             value = {props.value}
             secureTextEntry= {props.secureTextEntry} 

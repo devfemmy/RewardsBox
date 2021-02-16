@@ -15,7 +15,7 @@ const ForgotPassword = (props) => {
                </Text>
            </View>
            <View style= {styles.inputContainer}>
-                <CustomInput label= "Email address" />
+                <CustomInput bg= "white" label= "Email address" />
                 <CustomBtn onPress = {() => props.navigation.navigate('Verify Token')} text= "Send" bg= "#3D1A57" />
            </View>
 

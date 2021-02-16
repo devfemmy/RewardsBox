@@ -14,6 +14,7 @@ const CustomBtn = (props) => {
            
             justifyContent: 'center',
             alignItems: 'center',
+            marginBottom: 20
         },
         textStyle: {
             color: 'white',

@@ -5,13 +5,13 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 const ItemCard = (props) => {
     const styles = StyleSheet.create({
         container: {
-            minHeight: 30,
+            minHeight: props.minHeight,
             backgroundColor: props.bg,
             width: props.width,
             height: props.height,
             maxWidth: props.maxWidth,
             marginVertical: 15,
-            padding: 15,
+            // padding: 15,
             shadowColor: "#1F1F1F1F",
             shadowOffset: {
                 width: 1,
@@ -25,7 +25,7 @@ const ItemCard = (props) => {
         }
     });
     return (
-        <TouchableOpacity style= {styles.container}>
+        <TouchableOpacity onPress= {props.onPress} style= {styles.container}>
             {props.children}
         </TouchableOpacity>
     )
