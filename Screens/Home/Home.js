@@ -23,7 +23,8 @@ const HomePage = (props) => {
                 <MyIcon8 width= {15} height= {15} />
                 </View>
             </View>
-            <HomeCard bg= "#fff">
+            <HomeCard 
+            bg= "#fff">
                 <View style= {styles.flexContainer}>
                 <MyIcon width= {65} height= {65} />
                 <View style= {{width: '70%'}}>
@@ -37,7 +38,8 @@ const HomePage = (props) => {
                    
                 </View>
             </HomeCard>
-            <HomeCard bg= "#fff">
+            <HomeCard 
+            bg= "#fff">
                 <View style= {styles.flexContainer}>
                 <MyIcon2 width= {65} height= {65} />
                 <View style= {{width: '70%'}}>
@@ -55,7 +57,9 @@ const HomePage = (props) => {
                 <Text style = {{...styles.textStyle2, ...styles.textStyle3}}>Statistics</Text>
             </View>
             <View style= {{...styles.flexContainer, ...styles.paddedContainer}}>
-                <HomeCard height= {150} width= {150} bg= "#FCB017">
+                <HomeCard 
+                 onPress = {() => props.navigation.navigate('Items Redemption')}
+                height= {150} width= {150} bg= "#FCB017">
                     <View style= {styles.paddedContainer2}>
                     <MyIcon3 width= {40} height= {50} />
                     <Text style= {{...styles.textStyle, color: '#3D1A57'}}>
@@ -63,7 +67,9 @@ const HomePage = (props) => {
                         </Text>
                     </View>
                 </HomeCard>
-                <HomeCard height= {150}  width= {150} bg= "#FCB017">
+                <HomeCard 
+                onPress = {() => props.navigation.navigate('Discount Redemption')}
+                height= {150}  width= {150} bg= "#FCB017">
                     <View style= {styles.paddedContainer2}>
                         <MyIcon4 width= {40} height= {50} />
                         <Text style= {{...styles.textStyle, color: '#3D1A57'}}>
@@ -82,7 +88,9 @@ const HomePage = (props) => {
                 </View>
              
                 <ScrollView horizontal>
-                    <HomeCard marginRight= {20} maxWidth= {250} bg= "#3D1A57">
+                    <HomeCard 
+                    onPress = {() => props.navigation.navigate('Recent Transactions')}
+                    marginRight= {20} maxWidth= {250} bg= "#3D1A57">
                     <View style= {styles.flexContainer}>
                     <MyIcon6 width= {50} height= {50} />
                     <View style= {{width: '70%'}}>

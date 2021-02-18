@@ -26,7 +26,7 @@ const HomeCard = (props) => {
         }
     });
     return (
-        <TouchableOpacity style= {styles.container}>
+        <TouchableOpacity onPress= {props.onPress} style= {styles.container}>
             {props.children}
         </TouchableOpacity>
     )

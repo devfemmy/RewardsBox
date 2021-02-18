@@ -11,7 +11,7 @@ const CustomBtn = (props) => {
             fontWeight: 'bold',
             fontSize: 35,
             height: 50,
-           
+            borderRadius: props.borderRadius,
             justifyContent: 'center',
             alignItems: 'center',
             marginBottom: 20

@@ -8,6 +8,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import HomePage from '../Screens/Home/Home';
 import Redemption from '../Screens/Redemption/Redemption';
+import DiscountCard from '../Screens/DiscountCard/DiscountCard';
+import Settings from '../Screens/Settings/Settings';
+
 
 
 
@@ -122,14 +125,14 @@ const TabNav = (props) => {
                         } else if (route.name === 'Home') {
                           iconName = focused ? 'ios-home' : 'ios-home-outline';
                         }
-                        else if (route.name === 'Marathon') {
-                          iconName = focused ? 'ios-compass' : 'ios-compass-outline';
+                        else if (route.name === 'Voucher') {
+                          iconName = focused ? 'ios-albums' : 'ios-albums-outline';
                         }
-                        else if (route.name === 'Exam') {
-                          iconName = focused ? 'ios-book' : 'ios-book-outline';
-                        }
-                        else if (route.name === 'Book History') {
-                          iconName = focused ? 'ios-folder' : 'ios-folder-outline';
+                        // else if (route.name === 'Exam') {
+                        //   iconName = focused ? 'ios-book' : 'ios-book-outline';
+                        // }
+                        else if (route.name === 'Card') {
+                          iconName = focused ? 'ios-card' : 'ios-card-outline';
                         }
 
                         // You can return any component that you like here!
@@ -146,7 +149,9 @@ const TabNav = (props) => {
                       {state.userToken == null ? (
                         <>
                         <Tab.Screen name="Home" component={HomePage} />
-                        <Tab.Screen name="Redemption" component={Redemption} />
+                        <Tab.Screen name="Voucher" component={Redemption} />
+                        <Tab.Screen name="Card" component={DiscountCard} />
+                        <Tab.Screen name="Settings" component={Settings} />
                         {/* <Tab.Screen name="Login" component={LoginNavigator} */}
                         {/* /> */}
                        

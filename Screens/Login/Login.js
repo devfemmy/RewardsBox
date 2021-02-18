@@ -18,7 +18,7 @@ const LoginPage = (props) => {
                 <CustomInput bg= "white" label= "Email address" />
                 <CustomInput bg= "white" secureTextEntry label= "Password" />
                 <Text onPress= {() => props.navigation.navigate('Forgot Password')} style= {styles.textStyle3}>Forgot Password?</Text>
-                <CustomBtn onPress= {() => props.navigation.navigate('Home')} text= "Sign In" bg= "#3D1A57" />
+                <CustomBtn onPress= {() => props.navigation.navigate('Rewards Box')} text= "Sign In" bg= "#3D1A57" />
            </View>
 
         </View>

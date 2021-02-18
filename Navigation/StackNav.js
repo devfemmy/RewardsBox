@@ -12,6 +12,12 @@ import ItemDescription from '../Screens/Redemption/ItemDescription';
 import ItemList from '../Screens/Redemption/ItemList';
 import RedemptionReceipt from '../Screens/Redemption/RedemptionReceipt';
 import Offers from '../Screens/Redemption/Offers/Offers';
+import Summary from '../Screens/Redemption/Offers/SummaryPage';
+import Payment from '../Screens/Redemption/Offers/PaymentPage';
+import ScanCard from '../Screens/DiscountCard/ScanCard';
+import DiscountRedemption from '../Screens/Home/Transactions/DiscountRedemption';
+import ItemsRedemptions from '../Screens/Home/Transactions/ItemsRedemption';
+import RecentTransactions from '../Screens/Home/Transactions/RecentTransaction';
 
 
 // import Playquiz from '../Screens/Practise/MainQuestion';
@@ -29,7 +35,7 @@ const StackNav = () => {
             <Stack.Screen 
              name="Verify Token" component= {VerifyToken} />
             <Stack.Screen 
-             name="Home" component= {TabNav} />
+             name="Rewards Box" component= {TabNav} />
             <Stack.Screen 
              name="Select Items" component= {SelectItem} />
             <Stack.Screen 
@@ -40,6 +46,18 @@ const StackNav = () => {
              name="Redemption Receipt" component= {RedemptionReceipt} />
             <Stack.Screen 
              name="Offers" component= {Offers} />
+            <Stack.Screen 
+             name="Summary" component= {Summary} />
+            <Stack.Screen 
+             name="Payment" component= {Payment} />
+            <Stack.Screen 
+             name="Scan Card" component= {ScanCard} />
+            <Stack.Screen 
+             name="Discount Redemption" component= {DiscountRedemption} />
+            <Stack.Screen 
+             name="Items Redemption" component= {ItemsRedemptions} />
+            <Stack.Screen 
+             name="Recent Transactions" component= {RecentTransactions} />
         </Stack.Navigator>
         </NavigationContainer>
 

@@ -3,9 +3,10 @@ import { Text, View, StyleSheet, Dimensions} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import SuccessIcon from '../../assets/images/success.svg';
 import CustomBtn from '../../Components/CustomBtn';
+import CustomFooter from '../../Components/CustomFooter';
 
 
-const RedemptionReceipt = () => {
+const RedemptionReceipt = (props) => {
     return (
         <View style= {styles.container}>
             <ScrollView>
@@ -118,9 +119,7 @@ const RedemptionReceipt = () => {
                 </View>
             </View>
             </ScrollView>
-            <View style= {styles.footer}>
-                <CustomBtn bg= '#3D1A57' text= "Go To Home" />
-            </View>
+            <CustomFooter onPress= {() => props.navigation.navigate('Home')} text= "Go To Home" />
 
         </View>
     )
