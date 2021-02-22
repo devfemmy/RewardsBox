@@ -2,12 +2,13 @@ import React from 'react';
 import { Text, View, StyleSheet} from 'react-native';
 import CustomBtn from '../../../Components/CustomBtn';
 import ItemCard from '../../../Components/ItemCard';
+import OfferCard from '../../../Components/OfferCard';
 
 
 const RecentTransactions = (props) => {
     return (
         <View style= {styles.container}>
-            <ItemCard minHeight= {120} bg= "white">
+            <OfferCard minHeight= {120} bg= "white">
                 <View style= {styles.flexContainer}>
                     <View>
                         <Text style= {styles.opacity}>
@@ -18,7 +19,9 @@ const RecentTransactions = (props) => {
                         </Text>
                     </View>
                     <View style= {{width: '30%'}}>
-                        <CustomBtn borderRadius= {6} text= "View" bg= "#3D1A57" />
+                        <CustomBtn
+                        onPress= {() => props.navigation.navigate('Transaction Details')} 
+                        borderRadius= {6} text= "View" bg= "#3D1A57" />
                     </View>
                 </View>
                 <View style= {{...styles.flexContainer, ...styles.bordered}}>
@@ -47,8 +50,8 @@ const RecentTransactions = (props) => {
                         </Text>
                     </View>
                 </View>
-            </ItemCard>
-            <ItemCard minHeight= {120} bg= "white">
+            </OfferCard>
+            <OfferCard minHeight= {120} bg= "white">
                 <View style= {styles.flexContainer}>
                     <View>
                         <Text style= {styles.opacity}>
@@ -59,7 +62,9 @@ const RecentTransactions = (props) => {
                         </Text>
                     </View>
                     <View style= {{width: '30%'}}>
-                        <CustomBtn borderRadius= {6} text= "View" bg= "#3D1A57" />
+                        <CustomBtn
+                        onPress= {() => props.navigation.navigate('Transaction Details')} 
+                        borderRadius= {6} text= "View" bg= "#3D1A57" />
                     </View>
                 </View>
                 <View style= {{...styles.flexContainer, ...styles.bordered}}>
@@ -88,8 +93,8 @@ const RecentTransactions = (props) => {
                         </Text>
                     </View>
                 </View>
-            </ItemCard>
-            <ItemCard minHeight= {120} bg= "white">
+            </OfferCard>
+            <OfferCard minHeight= {120} bg= "white">
                 <View style= {styles.flexContainer}>
                     <View>
                         <Text style= {styles.opacity}>
@@ -100,7 +105,9 @@ const RecentTransactions = (props) => {
                         </Text>
                     </View>
                     <View style= {{width: '30%'}}>
-                        <CustomBtn borderRadius= {6} text= "View" bg= "#3D1A57" />
+                        <CustomBtn
+                        onPress= {() => props.navigation.navigate('Transaction Details')} 
+                        borderRadius= {6} text= "View" bg= "#3D1A57" />
                     </View>
                 </View>
                 <View style= {{...styles.flexContainer, ...styles.bordered}}>
@@ -129,48 +136,7 @@ const RecentTransactions = (props) => {
                         </Text>
                     </View>
                 </View>
-            </ItemCard>
-            <ItemCard minHeight= {120} bg= "white">
-                <View style= {styles.flexContainer}>
-                    <View>
-                        <Text style= {styles.opacity}>
-                            Date:
-                        </Text>
-                        <Text>
-                        2021-01-05 14:35:26
-                        </Text>
-                    </View>
-                    <View style= {{width: '30%'}}>
-                        <CustomBtn borderRadius= {6} text= "View" bg= "#3D1A57" />
-                    </View>
-                </View>
-                <View style= {{...styles.flexContainer, ...styles.bordered}}>
-                    <View>
-                        <Text style= {styles.opacity}>
-                            Total Cost:
-                        </Text>
-                        <Text>
-                        ₦7,696
-                        </Text>
-                    </View>
-                    <View>
-                        <Text style= {styles.opacity}>
-                            Order No:
-                        </Text>
-                        <Text>
-                        4596
-                        </Text>
-                    </View>
-                    <View>
-                        <Text style= {styles.opacity}>
-                            Total Items:
-                        </Text>
-                        <Text>
-                        5
-                        </Text>
-                    </View>
-                </View>
-            </ItemCard>
+            </OfferCard>
         </View>
     )
 }

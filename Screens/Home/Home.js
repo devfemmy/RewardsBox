@@ -24,6 +24,7 @@ const HomePage = (props) => {
                 </View>
             </View>
             <HomeCard 
+            onPress= {() => props.navigation.navigate('Voucher')}
             bg= "#fff">
                 <View style= {styles.flexContainer}>
                 <MyIcon width= {65} height= {65} />
@@ -39,6 +40,7 @@ const HomePage = (props) => {
                 </View>
             </HomeCard>
             <HomeCard 
+            onPress= {() => props.navigation.navigate('Card')}
             bg= "#fff">
                 <View style= {styles.flexContainer}>
                 <MyIcon2 width= {65} height= {65} />

@@ -18,6 +18,10 @@ import ScanCard from '../Screens/DiscountCard/ScanCard';
 import DiscountRedemption from '../Screens/Home/Transactions/DiscountRedemption';
 import ItemsRedemptions from '../Screens/Home/Transactions/ItemsRedemption';
 import RecentTransactions from '../Screens/Home/Transactions/RecentTransaction';
+import Profile from '../Screens/Profile/Profile/Profile';
+import ChangePassword from '../Screens/Profile/ChangePassword/ChangePassword';
+import ChangePin from '../Screens/Profile/ChangePin/ChangePin';
+import TransactionDetails from '../Screens/Home/Transactions/TransactionDetails';
 
 
 // import Playquiz from '../Screens/Practise/MainQuestion';
@@ -58,6 +62,14 @@ const StackNav = () => {
              name="Items Redemption" component= {ItemsRedemptions} />
             <Stack.Screen 
              name="Recent Transactions" component= {RecentTransactions} />
+            <Stack.Screen 
+             name="Profile" component= {Profile} />
+            <Stack.Screen 
+             name="Change Password" component= {ChangePassword} />
+            <Stack.Screen 
+             name="Change Pin" component= {ChangePin} />
+            <Stack.Screen 
+             name="Transaction Details" component= {TransactionDetails} />
         </Stack.Navigator>
         </NavigationContainer>
 
